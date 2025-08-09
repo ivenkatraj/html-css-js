@@ -1,153 +1,290 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-body,button{
-    color: var(--white-color);
-    font-family: 'Poppins',sans-serif;
+body,
+button {
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
 }
 
-.d-flex{
-    display: flex;
+.d-flex {
+  display: flex;
 }
 
-.flex-direction-column{
-    flex-direction: column;
+.flex-direction-column {
+  flex-direction: column;
 }
 
-.align-item-center{
-    align-items: center;
+.align-item-center {
+  align-items: center;
 }
 
-.align-item-start{
-    align-items: flex-start;
+.align-self-center{
+    align-self: center;
 }
 
-.justify-content-flex-start{
-    justify-content: flex-start;
+.align-content-center{
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.align-item-start {
+  align-items: flex-start;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+:root {
+  --nav-color: #252525;
+  --orange-color: #ec473c;
+  --body-color: #181818;
+  --white-color: white;
+  --light-black: #2c2c2c;
+  --white-gray: #7f7f7f;
+  --green-color: hsl(161.61deg 76.54% 35.1%);
+  --premium-color: #c48000;
+  --link-color: #017bff;
+}
+
+nav {
+  background-color: var(--nav-color);
+}
+
+.container {
+  width: 100%;
+  padding: 6px 1%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.nav-btn {
+  background-color: transparent;
+  padding: 5px 15px;
+  color: var(--white-color);
+  border: 1px solid var(--orange-color);
+  border-radius: 20px;
+}
+
+.nav-btn:hover {
+  transition: 1s all;
+  background-color: var(--orange-color);
+  border: 1px solid var(--white-color);
+}
+
+.gap-10 {
+  gap: 10px;
 }
 
 
-:root{
-    --nav-color:#252525;
-    --orange-color:#ec473c;
-    --body-color:#181818;
-    --white-color: white;
-    --light-black: #2c2c2c;
-    --white-gray:#7f7f7f;
+.icons,
+.icons img {
+  height: 20px;
+  cursor: pointer;
 }
 
-nav{
-    background-color: var(--nav-color);
+.image {
+  height: 40px;
 }
 
-.container{
-    width: 100%;
-    padding: 6px 1%;
+.nav-p {
+  font-size: 12px;
 }
 
-.logo img{
-    width:100px;
+section {
+  background-color: var(--body-color);
 }
 
-.justify-content-between{
-    justify-content: space-between;
+.btn-back {
+  background-color: var(--light-black);
+  color: var(--white-color);
+  border: 1px solid var(--light-black);
+  border-radius: 20px;
+  padding: 20px 20px;
 }
 
-.nav-btn{
-    background-color: transparent;
-    padding: 5px 15px;
-    color: var(--white-color);
-    border: 1px solid var(--orange-color);
-    border-radius: 20px;
+.btn-edit {
+  background-color: transparent;
+  color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  border-radius: 20px;
+  padding: 20px 20px;
 }
 
-.nav-btn:hover{
-    transition: 1s all;
-    background-color: var(--orange-color);
-    border: 1px solid var(--white-color);
+.p-tb-15px {
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
-.gap-10{
-    gap: 10px;
+.p-lr-15px {
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
-.icons, .icons img{
-    height: 20px;
-    cursor: pointer;
+.font-size-medium {
+  font-size: medium;
 }
 
-.image{
-    height: 40px;
+.font-size-larger {
+  font-size: larger;
 }
 
-.nav-p{
-    font-size: 12px;
+.container-full {
+  width: 100%;
 }
 
-section{
-    background-color: var(--body-color);
+.bg-color {
+  background-color: var(--light-black);
+  border-radius: 20px;
+  padding: 25px;
 }
 
-.btn-back{
-    background-color: var(--light-black);
-    color: var(--white-color);
-    border: 1px solid var(--light-black);
-    border-radius: 20px;
-    padding: 20px 20px;
+.first-container {
+  width: 29%;
+  margin-right: 1%;
 }
 
-.btn-edit{
-    background-color: transparent;
-    color: var(--orange-color);
-    border: 1px solid var(--orange-color);
-    border-radius: 20px;
-    padding: 20px 20px;
+.second-container {
+  width: 69%;
+  margin-left: 1%;
 }
 
-.p-tb-15px{
-    padding-top: 15px;
-    padding-bottom: 15px;
+.text-color-gray {
+  color: var(--white-gray);
 }
 
-.font-size-medium{
-    font-size: medium;
+.badge-verify,
+.badge-premium,
+.badge-link {
+  padding: 2px 10px;
+  border-radius: 20px;
 }
 
-.font-size-larger{
-    font-size: larger;
+.badge-verify {
+  background-color: var(--green-color);
 }
 
-.container-full{
-    width: 100%;
+.badge-premium {
+  background-color: var(--premium-color);
 }
 
-.first-container,.second-container{
-    background-color: var(--light-black);
-    border-radius: 20px;
-    padding: 15px;
+.badge-link {
+  background-color: var(--link-color);
 }
 
-.first-container{
-    width: 29%;
-    margin-right:1%;
+.m-tb-15px {
+  margin: 15px 0px;
 }
 
-.second-container{
-    width: 69%;
-    margin-left: 1%;
+.alert-num {
+  transform: scale(1.5);
+  position: relative;
+  margin-left: 10px;
 }
 
-.text-color-gray{
-    color: var(--white-gray);
+.alert-num span {
+  position: absolute;
+  font-size: 10px;
+  z-index: 2;
 }
 
-.badge-verify,.badge-premium,.badge-link{
-    padding: 2px 3px;
+.alert-num i {
+  position: absolute;
+  color: var(--orange-color);
+  z-index: 1;
 }
 
-.badge-link>*{
-    margin: 0px 3px;
+.collapsed-btn {
+  background-color: var(--light-black);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.collapsed-btn div {
+  padding: 15px 15px;
+}
+
+.collapsed-btn div:hover {
+  transition: 1s all;
+  background-color: var(--orange-color);
+}
+
+.table-container {
+  width: 100%;
+}
+
+.first-table {
+  width: 50%;
+}
+
+.second-table {
+  width: 40%;
+}
+
+tr td:nth-child(odd) {
+  color: var(--white-gray);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px 16px;
+}
+
+.pink-color {
+  color: var(--orange-color);
+}
+
+.text-overview{
+    margin-bottom: 10px;
+}
+
+.half-container{
+    width:49%;
+}
+
+.line-pink{
+    border-top: 10px solid var(--orange-color);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.line-gray{
+    width: 90%;
+    border-top: 10px solid var(--white-gray);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.minus-left-10{
+    left: -10px;
+}
+
+.circle-icon{
+color: var(--orange-color);
+transform: scale(2);
 }
