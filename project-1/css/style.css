@@ -1,22 +1,290 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #efefef;
+body,
+button {
+  color: var(--white-color);
+  font-family: "Poppins", sans-serif;
 }
 
-table.list{
-    text-align: center;
-    width: 100%;
+.d-flex {
+  display: flex;
 }
 
-td{
-    border: 1px solid black;
+.flex-direction-column {
+  flex-direction: column;
 }
 
-tr:nth-child(even){
-    background-color: #a7a7a7;
+.align-item-center {
+  align-items: center;
+}
+
+.align-self-center{
+    align-self: center;
+}
+
+.align-content-center{
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.align-item-start {
+  align-items: flex-start;
+}
+
+.justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+:root {
+  --nav-color: #252525;
+  --orange-color: #ec473c;
+  --body-color: #181818;
+  --white-color: white;
+  --light-black: #2c2c2c;
+  --white-gray: #7f7f7f;
+  --green-color: hsl(161.61deg 76.54% 35.1%);
+  --premium-color: #c48000;
+  --link-color: #017bff;
+}
+
+nav {
+  background-color: var(--nav-color);
+}
+
+.container {
+  width: 100%;
+  padding: 6px 1%;
+}
+
+.logo img {
+  width: 100px;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.nav-btn {
+  background-color: transparent;
+  padding: 5px 15px;
+  color: var(--white-color);
+  border: 1px solid var(--orange-color);
+  border-radius: 20px;
+}
+
+.nav-btn:hover {
+  transition: 1s all;
+  background-color: var(--orange-color);
+  border: 1px solid var(--white-color);
+}
+
+.gap-10 {
+  gap: 10px;
+}
+
+
+.icons,
+.icons img {
+  height: 20px;
+  cursor: pointer;
+}
+
+.image {
+  height: 40px;
+}
+
+.nav-p {
+  font-size: 12px;
+}
+
+section {
+  background-color: var(--body-color);
+}
+
+.btn-back {
+  background-color: var(--light-black);
+  color: var(--white-color);
+  border: 1px solid var(--light-black);
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.btn-edit {
+  background-color: transparent;
+  color: var(--orange-color);
+  border: 1px solid var(--orange-color);
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+
+.p-tb-15px {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.p-lr-15px {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.font-size-medium {
+  font-size: medium;
+}
+
+.font-size-larger {
+  font-size: larger;
+}
+
+.container-full {
+  width: 100%;
+}
+
+.bg-color {
+  background-color: var(--light-black);
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.first-container {
+  width: 29%;
+  margin-right: 1%;
+}
+
+.second-container {
+  width: 69%;
+  margin-left: 1%;
+}
+
+.text-color-gray {
+  color: var(--white-gray);
+}
+
+.badge-verify,
+.badge-premium,
+.badge-link {
+  padding: 2px 10px;
+  border-radius: 20px;
+}
+
+.badge-verify {
+  background-color: var(--green-color);
+}
+
+.badge-premium {
+  background-color: var(--premium-color);
+}
+
+.badge-link {
+  background-color: var(--link-color);
+}
+
+.m-tb-15px {
+  margin: 15px 0px;
+}
+
+.alert-num {
+  transform: scale(1.5);
+  position: relative;
+  margin-left: 10px;
+}
+
+.alert-num span {
+  position: absolute;
+  font-size: 10px;
+  z-index: 2;
+}
+
+.alert-num i {
+  position: absolute;
+  color: var(--orange-color);
+  z-index: 1;
+}
+
+.collapsed-btn {
+  background-color: var(--light-black);
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.collapsed-btn div {
+  padding: 15px 15px;
+}
+
+.collapsed-btn div:hover {
+  transition: 1s all;
+  background-color: var(--orange-color);
+}
+
+.table-container {
+  width: 100%;
+}
+
+.first-table {
+  width: 50%;
+}
+
+.second-table {
+  width: 40%;
+}
+
+tr td:nth-child(odd) {
+  color: var(--white-gray);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0px 16px;
+}
+
+.pink-color {
+  color: var(--orange-color);
+}
+
+.text-overview{
+    margin-bottom: 10px;
+}
+
+.half-container{
+    width:49%;
+}
+
+.line-pink{
+    border-top: 10px solid var(--orange-color);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+}
+
+.line-gray{
+    width: 90%;
+    border-top: 10px solid var(--white-gray);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.position-relative{
+    position: relative;
+}
+
+.position-absolute{
+    position: absolute;
+}
+
+.minus-left-10{
+    left: -10px;
+}
+
+.circle-icon{
+color: var(--orange-color);
+transform: scale(2);
 }
