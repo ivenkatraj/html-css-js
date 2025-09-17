@@ -1,0 +1,168 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+/* Common Utilities starts here*/
+
+:root {
+  --gray-color: #928394;
+  --h1-color: #525252;
+  --white-color: #ffffff;
+  --pink-color: #e42d6d;
+  --h1-first-section: #e12f6e;
+  --h3-first-section: #607ab1;
+  --gray-translucent-color: #9283947b;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-item-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative{
+    position: relative;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.b-radius {
+  border-radius: 15px;
+}
+
+.gap-2 {
+  gap: 2px;
+}
+.gap-10 {
+  gap: 15px;
+}
+
+.gap-50px{
+    gap: 50px;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+.justify-content-center{
+    justify-content: center;
+}
+
+.text-align-center{
+    text-align: center;
+}
+
+.ptb-100px{
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+/* Common Utilities ends here*/
+
+/* Hero Section starts here */
+.hero-section {
+  width: 100%;
+  background-image: url(../img/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top-nav {
+  width: 70%;
+  margin: 20px auto;
+  background-color: pink;
+  padding: 15px;
+}
+
+.premium-button {
+  padding: 10px 20px;
+  font-weight: 900;
+  border-width: 0px;
+  color: var(--white-color);
+  background-color: var(--pink-color);
+}
+
+.premium-button:hover{
+    transition: all 0.5s;
+    background-color: #ff6da0;
+}
+
+ul > li {
+  color: var(--gray-color);
+  font-size: 15px;
+}
+
+.top-nav > div > span {
+  color: var(--h1-color);
+  font-weight: 600;
+}
+
+ul > li:last-child {
+  color: black !important;
+}
+
+.hero-section>div:nth-child(2){
+    color: var(--white-color);
+}
+/* Hero Section ends here */
+
+
+/* First Section Starts here */
+.first-section{
+    background-color: #e8e8e8;
+}
+
+.inner-section{
+    width: 96%;
+    margin: 2%;
+    padding: 150px 20px;
+  background-image: linear-gradient(to bottom, rgb(255, 208, 170), rgb(255, 255, 255));
+    border-radius: 15px;
+    margin-top: -60px;
+    font-size: larger;
+}
+
+.cards{
+    text-align: center;
+    width: 15%;
+}
+
+.cards>h1{
+    color: var(--h1-first-section);
+}
+
+.cards>h3{
+    color: var(--h3-first-section);
+}
+
+.cards>p{
+    color: var(--gray-color);
+}
+
+hr{
+    opacity: 0.5;
+}
+/* First Section Ends here */
