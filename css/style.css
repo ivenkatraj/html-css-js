@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Lexend",sans-serif;
+}
+
+.bg-img{
+    background-image: url("../img/greenery-image-bg.jpg");
+    background-size: cover;
+}
+
+.title{
+    padding: 20px;
+    color: bisque;
+}
