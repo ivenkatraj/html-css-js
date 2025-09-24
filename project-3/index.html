@@ -9,9 +9,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
 
-<body>
-    <div class="container">
-        <h2>Speech to Text Converter</h2>
+<body class="d-flex justify-content-center">
+    <div class="container d-flex justify-content-center flex-direction-column align-items-center">
+        <!-- <div> -->
+            <h2>Speech to Text Converter</h2>
+        <!-- </div> -->
+        <div id="result"></div>
+        <div class="button-container d-flex justify-content-center align-item-center gap-20">
+            <button onclick="startConverting()">
+                <i class="fa fa-microphone fa-beat justify-content-center"></i>
+            </button>
+
+            <button onclick="startConverting()">
+                <i class="fa fa-stop fa-beat justify-content-center"></i>
+            </button>
+        </div>
     </div>
     <script src="./script/script.js"></script>
 </body>
