@@ -111,11 +111,12 @@ button {
   width: 30%;
   min-height: 10vh;
   background-color: #d39162;
+  border-radius: 5px;
 }
 
 .cards > h2,
-p,
-span {
+.cards > p,
+.cards > span {
   padding: 10px 15px;
 }
 
