@@ -1,0 +1,158 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: antiquewhite;
+}
+
+body {
+  background-image: url("../img/coffee-bg.webp");
+  background-size: cover;
+  background-position: bottom;
+  background-color: #ff8800;
+  transform: 10px;
+}
+
+:root {
+  --white-color: white;
+  --brown-color: #ff8800;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+.top-nav,
+.hero-section {
+  margin: 10px 6%;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-direction-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+li {
+  list-style: none;
+}
+
+.hero-section,
+.top-nav {
+  width: 88%;
+}
+
+.first-container,
+.second-container {
+  min-height: 90vh;
+}
+
+.first-container {
+  width: 40%;
+}
+
+.second-container {
+  width: 50%;
+}
+
+button {
+  padding: 10px 40px;
+}
+
+.first-container i {
+  font-size: 35px;
+}
+
+.carousel {
+  width: 100%;
+}
+
+.carousel-arrow-right {
+  right: -30px;
+}
+
+.carousel-arrow-left {
+  left: -30px;
+}
+
+.welcome-text {
+  font-size: 25px;
+  font-weight: 200;
+  top: -31px;
+}
+
+.cards {
+  width: 30%;
+  min-height: 10vh;
+  background-color: #d39162;
+}
+
+.cards > h2,
+p,
+span {
+  padding: 10px 15px;
+}
+
+img {
+  width: 100%;
+  position: relative;
+  top: -12vh;
+}
+
+.img-height {
+  overflow: hidden;
+  height: 28vh;
+}
+
+.fa-user {
+  color: var(--white-color);
+}
+
+.fa-cart-shopping {
+  color: var(--white-color);
+}
+
+.login-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: var(--brown-color);
+}
+
+.height-vh {
+  min-height: 90vh;
+}
+
+.height-vh > div > button {
+color: black;
+font-size: 20px;
+background-color: var(--brown-color);
+border: 0px;
+border-radius: 5px;
+}
