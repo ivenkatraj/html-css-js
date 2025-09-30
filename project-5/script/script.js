@@ -1,4 +1,5 @@
 const input = document.getElementById("input-field");
+const body = document.body;
 var countries = [
   "Afghanistan",
   "Albania",
@@ -224,6 +225,7 @@ var countries = [
   "Zimbabwe",
 ];
 input.addEventListener("focus", () => {
+  body.append("Hello World!");
   let i = 10;
   while (10 >= i && i >= 1) {
     console.log("Hello World", i);
@@ -231,8 +233,7 @@ input.addEventListener("focus", () => {
   }
 });
 
-
-const checkbox=document.getElementById("enable");
-checkbox.addEventListener("click",()=>{
-    console.log("Button is clicked");
-})
+const checkbox = document.getElementById("enable");
+checkbox.addEventListener("click", () => {
+  console.log("Button is clicked");
+});
