@@ -1,14 +1,17 @@
 *{
-    padding: 0px;
     margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 20px;
 }
 
-/* Common class starts here */
 .d-flex{
     display: flex;
+}
+
+.align-items-center{
+    align-items: center;
 }
 
 .justify-content-center{
@@ -16,31 +19,15 @@
 }
 
 .gap-20{
-    gap:20px
+    gap: 20px;
 }
-
-.align-items-center{
-    align-items: center;
-}
-
-/* Common class ends here */
 
 .container{
-    min-height: 100vh;
+    height: 100vh;
 }
 
-.container>input{
-    padding: 20px;
-}
-
-.btn{
-    cursor: pointer;
-    background-color: rgb(255, 190, 110);
+#inputField{
+    padding: 10px;
     border-radius: 5px;
-    border: 0px;
-}
-
-#input-field{
-    border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid rgb(0, 0, 0);
 }
