@@ -1,0 +1,35 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: large;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#suggestionArea {
+  position: absolute;
+}
+
+#suggestionArea div{
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    width: 100%;
+    margin: 2px 0px;
+    cursor: pointer;
+}
+
+#inputField:focus {
+  border: 2px solid blue;
+}
+
+#inputField {
+  padding: 15px 10px;
+  border-radius: 2px solid gray;
+  position: relative;
+}
