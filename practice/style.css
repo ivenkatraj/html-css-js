@@ -23,11 +23,50 @@
 }
 
 .container{
+    width: 20%;
     height: 100vh;
 }
 
-#inputField{
+.bg-btn{
+    background-color: aquamarine;
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.bg-btn:hover{
+    transition: all 0.5s;
+    background-color: bisque;
+}
+
+.bottom{
+    height: 50vh;
+}
+
+.middle{
+    height: 20vh;
+}
+
+input{
+    padding: 10px;
+}
+
+.top{
+    height: 30vh;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.button{
+    background-color: rgb(255, 126, 126);
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.justify-content-space-between{
+    justify-content: space-between;
 }
